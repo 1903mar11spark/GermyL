@@ -93,15 +93,25 @@ System.out.println(" ");
 		}
 		
 		for(int k = start; k <= end; k++) {
-			for (int i = 0; i <= numbers.length; i++ ) {
+			for (int i = 0; i <= numbers.length-2; i++ ) {
+				
 				if(k % numbers[i] == 0)
 				{
 				System.out.print(terms[i] + ", ");
 				}
-				else {
-					System.out.print(k + ", ");
+				if(k % numbers[i+1] == 0)
+				{
+				System.out.print(terms[i+1] + ", ");
+				}
+				if(k % numbers[i+1] == 0 && k % numbers[i] == 0)
+				{
+				System.out.print(terms[i] + terms[i+1] + ", ");
 				}
 				
+				if (k % numbers[i+1] != 0 && k % numbers[i] != 0) {
+					
+				System.out.print(k + ", ");
+				}
 			}
 			
 			}
