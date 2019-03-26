@@ -99,14 +99,6 @@ System.out.println(" ");
 				{
 				System.out.print(terms[i] + ", ");
 				}
-				if(k % numbers[i+1] == 0)
-				{
-				System.out.print(terms[i+1] + ", ");
-				}
-				if(k % numbers[i+1] == 0 && k % numbers[i] == 0)
-				{
-				System.out.print(terms[i] + terms[i+1] + ", ");
-				}
 				
 				if (k % numbers[i+1] != 0 && k % numbers[i] != 0) {
 					

@@ -1,0 +1,275 @@
+body.nothome{
+    
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f3e8e8;
+    background-image: url(bg1.jpeg);
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overscroll-behavior-x: hidden;
+    font-family: "Luna";
+
+}
+body.home{
+    
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f3e8e8;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overscroll-behavior-x: hidden;
+    font-family: "Luna";
+
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+header{
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1{
+    margin-top: -100px;
+}
+header,header:before{
+    background: 50% 50% /cover;
+
+}
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(forest5.jpg);
+    background-size:cover;
+    transform-origin: center center 0;
+    /*typo*/
+    transform: traslateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header *{
+    font-weight:normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+/*nav bar*/
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    float:left;
+}
+
+/*nav position*/
+header nav{
+    
+    list-style: none;
+    padding: 0;
+    width: 480px;
+    margin: 0 auto;
+}
+
+/*Nav bar color/highlight*/
+header .highlight,header .current a{
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+/*Hove over nav bar links*/
+header a:hover{
+    color: #9efcc8;
+    font-weight:bold;
+}
+
+
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+
+}
+
+
+#showcase p{
+    font-size: 20px;
+
+}
+
+.button_1{
+    height: 30px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+.ttbutton{
+    height: 30px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*About Page List: Trasparent Form*/
+.hform{
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: trasnlate(-50%, -50%);
+    width: 400px;
+    height: 100%;
+    box-sizing:border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+
+    
+}
+.aboutlist{
+    position: static;
+    background-image: url(bg1.jpeg);
+    height: 50%;
+
+    
+}
+.favart, #user{
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: bold;
+    color: #f5efef;
+    text-align: center;
+}
+
+#boxes{
+
+    margin-top: 20px;
+    
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    color: white;
+
+}
+
+#boxes .box img{
+    width: 90px;
+
+}
+/*Side Bar About Page*/
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col{
+    width: 65%;
+}
+/*unordered list with a class of festivities => list*/
+ul#festivities li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+/*Ordered list of class 'olist' targeting the list numbers; specifically in the about page*/
+ol.olist li, .page-title{
+    color: white;    
+}
+
+footer {
+    padding:20px;
+    margin-top: 20px;
+    height: 100%;
+    color: #4e4c4c;
+    background-color: #f3e8e8;
+    text-align: center;
+}
+
+/*Media Queries*/
+@media(max-width: 768px){
+    header #branding,
+    header nav, 
+    header nav li,
+    #boxes .box
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+
+    }
+}
+
+
+
+/*slides*/
+
